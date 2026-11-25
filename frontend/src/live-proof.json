@@ -1,0 +1,66 @@
+{
+  "executedAt": "2026-11-25T16:25:46.187Z",
+  "contracts": {
+    "oWETH": "0x45F12F7114265C090E52f2fd5E8e61f6Dec035b0",
+    "oUSDC": "0x55798e19AE5027F5eCf4cfD5C1E7452c93184BfB",
+    "omniPricePool": "0x89d861fB6D69adC5BF3D6523e673F81b5749DCD2",
+    "omniGuardVault": "0x0D8D503eA193Ceb3c98264e20463Aa608aD78671",
+    "omniGuardReactive": "0x45F12F7114265C090E52f2fd5E8e61f6Dec035b0"
+  },
+  "steps": [
+    {
+      "step": 1,
+      "label": "Arm Trailing Stop Position (Base Sepolia -> Lasna Auto-Mirror)",
+      "positionId": 1,
+      "originTx": "0xe878b9a3d26d9fc079ae514900e6bed3a0f285443788622939e29f67fa048fea",
+      "originBlock": 63510419,
+      "originTimestamp": 1795623952,
+      "reactiveTx": "0xfc21d1c17067bddda19dd08886b0d598e9e8540c2b43b4b333a6c02f0ff3ba6d",
+      "reactiveBlock": 9230229,
+      "reactiveTimestamp": 1795623952,
+      "wallLatencyMs": 2053
+    },
+    {
+      "step": 2,
+      "label": "Market Rally +13.3% ($3,000 -> $3,400): Stateful HWM Ratchet on Lasna",
+      "originTx": "0x8ebd70dc35e69537db35411b5fb56a752b9b5e71c84a1d7e8cc803eab3cbf2e1",
+      "originBlock": 63510451,
+      "originTimestamp": 1795623959,
+      "reactiveTx": "0x5317aeb2dd253a522ca22b72259b06483c2c1df6af8baf513ad431a9361b936e",
+      "reactiveBlock": 9230234,
+      "reactiveTimestamp": 1795623957,
+      "newHighWaterMarkUsd": 3400,
+      "newTrailingStopUsd": 3230,
+      "wallLatencyMs": 1332
+    },
+    {
+      "step": 3,
+      "label": "Trailing Stop Breach ($3,200 <= $3,230): Full Autonomous Cross-Chain Settlement",
+      "positionId": 1,
+      "originTx": "0x1e1e7f68cd2297eb4f1f282071e939de3dd06af9ce8850c6a3e7e95a8ec91fd7",
+      "originBlock": 63510485,
+      "originTimestamp": 1795623965,
+      "reactiveTx": "0x70cacb1e64210ae8e452800644535d19b05152bcbbc91541190c61bd4e6a988b",
+      "reactiveBlock": 9230241,
+      "reactiveTimestamp": 1795623965,
+      "callbackTx": "0xa17f9c16683d872a3cfcae90c23d99e664f8f72ca7c2ab25d69a2a6944a4022d",
+      "callbackBlock": 63510492,
+      "callbackTimestamp": 1795623967,
+      "protectedUsdc": 6317.81142,
+      "onChainLatencySec": 2,
+      "wallLatencyMs": 3377
+    }
+  ],
+  "metrics": {
+    "positionId": 1,
+    "entryPriceUsd": 3000,
+    "peakHighWaterMarkUsd": 3400,
+    "trailingStopPriceUsd": 3230,
+    "triggerPriceUsd": 3200,
+    "protectedUsdc": 6317.81142,
+    "originToLasnaMs": 1838,
+    "endToEndWallMs": 3377,
+    "endToEndBlockSec": 2,
+    "baseSepoliaBlockDelta": 7
+  }
+}

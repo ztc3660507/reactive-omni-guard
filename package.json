@@ -1,0 +1,20 @@
+{
+  "name": "reactive-omni-guard",
+  "version": "1.0.0",
+  "description": "OmniGuard: Keeper-less Sub-Second Trailing Stop-Loss, Take-Profit & Flash-Crash Shield powered by Reactive Omni & Base Sepolia",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:live": "node scripts/deploy.js",
+    "fund:lasna": "node scripts/fund-lasna.js",
+    "demo:live": "node scripts/run-live-demo.js"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "chai": "^4.5.0",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.5",
+    "hardhat": "^2.22.19"
+  }
+}

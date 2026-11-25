@@ -1,0 +1,32 @@
+{
+  "deployedAt": "2026-11-25T16:25:44.196Z",
+  "deployer": "0x4e78021109DbDc1E5a3736DCee637C157546fE2F",
+  "networks": {
+    "baseSepolia": {
+      "chainId": 84532,
+      "rpcUrl": "https://sepolia.base.org",
+      "explorer": "https://sepolia.basescan.org",
+      "callbackProxy": "0x476F44b11F5C942c58f4c8E3d0300E5710743585"
+    },
+    "lasna": {
+      "chainId": 5318007,
+      "rpcUrl": "https://lasna-rpc.rnk.dev/",
+      "explorer": "https://lasna.reactscan.net",
+      "systemContract": "0x8888888888888888888888888888888888888888"
+    }
+  },
+  "contracts": {
+    "oWETH": "0x45F12F7114265C090E52f2fd5E8e61f6Dec035b0",
+    "oUSDC": "0x55798e19AE5027F5eCf4cfD5C1E7452c93184BfB",
+    "omniPricePool": "0x89d861fB6D69adC5BF3D6523e673F81b5749DCD2",
+    "omniGuardVault": "0x0D8D503eA193Ceb3c98264e20463Aa608aD78671",
+    "omniGuardReactive": "0x45F12F7114265C090E52f2fd5E8e61f6Dec035b0"
+  },
+  "deployTxs": {
+    "reactiveDeploy": "0xf728600aa7435384844d9f6396e48b72a520fd2f49f6dbae8187cdf84206bd95",
+    "vaultDeploy": "0xef58c48ca3e4103510b73ff285b1834e9fa119dff2664190b047c02b7deba9c3",
+    "configureVault": "0xb0364338c4ed905b9a11f4a61b10e2dec1ab2b4833fe8c4e7467e6d097fef318",
+    "lasnaReserveDeposit": "0x1760539e699f9e611f806d768550dc16ec7c31c74d2cb0e52364419d414da922",
+    "proxyReserveDeposit": "0xf65925571af40e18d778dce8c783b7f970e84bd00ffda3703082d90855a54a2c"
+  }
+}
